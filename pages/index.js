@@ -1,14 +1,16 @@
-import { Page, Text } from '@geist-ui/react'
+import { Page, Text, Spacer } from "@geist-ui/react";
+import Intro from "@/components/Intro";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <Page dotBackdrop size="mini">
+    <Page dotBackdrop size="large" render="effect-seo">
       <Page.Header>
-        <Text h2 style={{fontWeight:"bold"}}>Webiza test</Text>
+        <Navbar />
       </Page.Header>
-      <Text>
-       Time to have your modern website.
-      </Text>
+      <Page.Content style={{ padding: 0 }}>
+        <Intro />
+      </Page.Content>
     </Page>
-  )
+  );
 }

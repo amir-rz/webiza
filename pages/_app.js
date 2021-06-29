@@ -3,7 +3,7 @@ import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <GeistProvider>
+    <GeistProvider themeType="dark">
       <CssBaseline />
       <Component {...pageProps} />
     </GeistProvider>
