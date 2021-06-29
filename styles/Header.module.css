@@ -1,0 +1,158 @@
+.makeITFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.marginLeft25px {
+  margin-left: 25px;
+}
+.marginLeft25px:before {
+  content: none;
+}
+.marginLeft25px a {
+
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 10px 16px;
+}
+.brand {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+}
+.brandD {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  color: #fff;
+}
+.hamergurMenu {
+  display: none;
+}
+.ham {
+  display: none;
+}
+.hamergurMenuD{
+  display: none;
+}
+@media only screen and (max-width: 890px) {
+  .makeITFlex nav {
+    display: none;
+  }
+  .brandD{
+    margin-left: 10px;
+  }
+  .brand{
+    margin-left: 10px;
+  }
+  .hamergurMenu {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  transition: opacity 3s;
+  }
+  .hamergurMenuClose {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+  transition: opacity 3s;
+    transform-origin: center;
+  }
+  .hamergurMenuD {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  transition: opacity 3s;
+  }
+  .hamergurMenuD div {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+ 
+  }
+  .hamergurMenu div {
+    width: 50px;
+    height: 3px;
+    background-color: #000;
+ 
+  }
+  .hamergurMenuClose1 {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transform: rotate(45deg);
+       position: absolute;
+    top: 10px;
+  }
+  .hamergurMenuClose2 {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+  }
+  .hamergurMenuClose1D {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(45deg);
+       position: absolute;
+    top: 10px;
+  }
+  .hamergurMenuClose2D {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+  }
+  .marginItTop {
+    margin-top: 10px;
+  }
+  .ham {
+    height: 400px;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    background-color: rgba(0, 0, 0);
+    padding-top: 30px;
+    display: block;
+    width: 50%;
+    text-align: center;
+    transition: opacity .3s;
+    width: 100%;
+    z-index: 1000;
+  }
+   .makeItList{
+     margin-top: 100px;
+   }
+  .makeItList li {
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .makeItList li::before {
+    content: none;
+  }
+  .makeItList li a {
+    color: #fff;
+  }
+
+}

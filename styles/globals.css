@@ -1,0 +1,19 @@
+/* header blue #2944AB */
+/* description gray #797C7F */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: red;
+  font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 100%;
+  opacity: 0.5;
+}
