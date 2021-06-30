@@ -2,7 +2,8 @@ import React, { Fragment, useState } from "react";
 import styled from "styled-components";
 import { Text, Link, Container, Button } from "@geist-ui/react";
 import { Menu } from "@geist-ui/react-icons";
-import MobileMenu from "@/components/Theme/Navbar/MobileMenu";
+import MobileMenu from "@/components/Navbar/MobileMenu";
+import ThemeToggler from "@/components/Navbar/ThemeToggler";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -18,10 +19,11 @@ const Navbar = () => {
   return (
     <Fragment>
       <Container style={NavContainerStyles}>
-        <Text h3 style={titleStyles}>
+        <Text h3 className="m-0 pr-3 mr-auto">
           Webiza
         </Text>
-        <PrimaryNavContainer className="mobile3:flex hidden">
+
+        <PrimaryNavContainer className="mobile3:flex hidden ">
           <NavItem className="active ">
             <Link>
               <Text p>Home</Text>
@@ -38,8 +40,12 @@ const Navbar = () => {
             </Link>
           </NavItem>
         </PrimaryNavContainer>
+
+        <Divider className="tablet1:block hidden mx-5 bg-primary dark:bg-secondary" />
+        <ThemeToggler />
+
         <div className="mobile3:hidden block">
-          <Button auto size="large" iconRight={<Menu />} onClick={handleOpen}/>
+          <Button auto size="large" iconRight={<Menu />} onClick={handleOpen} />
         </div>
       </Container>
       {openMenu && <MobileMenu handleClose={handleClose} />}
@@ -57,14 +63,9 @@ const NavContainerStyles = {
   top: 0,
   left: "50%",
   transform: "translateX(-50%)",
-  justifyContent: "space-between",
   alignItems: "center",
   overflowX: "auto", // remove this
   zIndex: 1,
-};
-
-const titleStyles = {
-  margin: 0,
 };
 
 const PrimaryNavContainer = styled.ul`
@@ -87,4 +88,10 @@ const NavItem = styled.li`
   ::before {
     content: none;
   }
+`;
+
+const Divider = styled.div`
+  height: 50px;
+  width: 1px;
+  opacity: 0.3;
 `;

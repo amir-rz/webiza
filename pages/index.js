@@ -1,6 +1,6 @@
-import { Page, Text, Spacer } from "@geist-ui/react";
+import { Page } from "@geist-ui/react";
 import Intro from "@/components/Intro";
-import Navbar from "@/components/Theme/Navbar/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (

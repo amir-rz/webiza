@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, Container, Row, Button, Spacer } from "@geist-ui/react";
-import styled from "styled-components";
 
 const Intro = () => {
   return (
