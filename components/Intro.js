@@ -5,11 +5,21 @@ import styled from "styled-components";
 const Intro = () => {
   return (
     <Container style={containerStyles}>
-      <Text h1 style={quoteStyle}>
-        We design and develop production-level web applications
+      <Text
+        className="
+        laptop1:text-6xl
+        tablet1:text-5xl
+        mobile3:text-3xl
+        text-2xl
+        text-center
+        "
+        h1
+        style={quoteStyle}>
+        We <br /> design and develop <br /> production-level <br /> web
+        applications
       </Text>
       <Spacer y={2} />
-      <Row>
+      <div className="flex flex-col mobile3:flex-row">
         <Button auto type="secondary">
           Book your free strategy session
         </Button>
@@ -17,7 +27,7 @@ const Intro = () => {
         <Button auto type="ghost">
           Services
         </Button>
-      </Row>
+      </div>
     </Container>
   );
 };
@@ -36,9 +46,8 @@ const containerStyles = {
 };
 
 const quoteStyle = {
-  width: "60%",
-  textAlign: "center",
-  margin: 0,
-  marginTop:"-50px",
-  padding: 0,
+  // width: "60%",
+  // textAlign: "center",
+  // margin: 0,
+  // padding: 0,
 };

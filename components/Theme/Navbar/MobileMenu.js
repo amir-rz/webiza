@@ -5,7 +5,7 @@ import { ChevronRight } from "@geist-ui/react-icons";
 
 const MobileMenu = ({ handleClose }) => {
   return (
-    <Container className="bg-primary text-secondary">
+    <Container className="bg-secondary text-primary">
       <div
         className="fixed top-10 p-2 right-10 cursor-pointer"
         onClick={handleClose}>
