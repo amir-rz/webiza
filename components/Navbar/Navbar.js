@@ -28,7 +28,7 @@ const Navbar = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#">
+            <Link href="#services-section">
               <Text p>Services</Text>
             </Link>
           </NavItem>
