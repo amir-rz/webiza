@@ -1,6 +1,7 @@
 import { Page } from "@geist-ui/react";
-import Intro from "@/components/Intro";
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar/Navbar";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
         <Navbar />
       </Page.Header>
       <Page.Content style={{ padding: 0 }}>
-        <Intro />
+        <Hero />
+        <Services />
       </Page.Content>
     </Page>
   );

@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, Container, Row, Button, Spacer } from "@geist-ui/react";
+import { Text, Button, Spacer } from "@geist-ui/react";
+import styled from "styled-components"
 
-const Intro = () => {
+const Hero = () => {
   return (
-    <Container style={containerStyles}>
+    <div className="max-h-1000 w-screen h-screen max-w-full flex flex-col justify-center items-center">
       <Text
         className="
         laptop1:text-6xl
@@ -27,22 +28,12 @@ const Intro = () => {
           Services
         </Button>
       </div>
-    </Container>
+    </div>
   );
 };
 
-export default Intro;
+export default Hero;
 
-const containerStyles = {
-  width: "100vw",
-  height: "100vh",
-  maxWidth: "100%",
-  maxHeight: "100vh",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-};
 
 const quoteStyle = {
   // width: "60%",

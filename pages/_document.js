@@ -4,13 +4,11 @@ import { CssBaseline } from "@geist-ui/react";
 import { AppContext } from "./_app";
 import React from "react";
 
-
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
     const styles = CssBaseline.flush();
-    
+
     return {
       ...initialProps,
       styles: (
@@ -24,7 +22,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en" className="light">
         <Head>
           {/* Favicons */}
           <link
