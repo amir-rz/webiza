@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Button, Spacer } from "@geist-ui/react";
+import { Text, Button, Spacer, Link } from "@geist-ui/react";
 import styled from "styled-components"
 
 const Hero = () => {
@@ -21,11 +21,13 @@ const Hero = () => {
       <Spacer y={2} />
       <div className="flex flex-col mobile3:flex-row">
         <Button auto type="secondary">
-          Book your free strategy session
+          Tell us about your project
         </Button>
         <Spacer x={1} />
         <Button auto type="ghost">
+          <a href="#services-section">
           Services
+          </a>
         </Button>
       </div>
     </div>

@@ -8,19 +8,19 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <div className="max-h-1000 w-screen h-screen max-w-full flex flex-col justify-center items-center">
+    <div id="services-section" className="max-h-1000 w-screen h-screen max-w-full flex flex-col justify-center items-center">
       <div className="relative h-1/3 flex items-center overflow-hidden">
-        <Image placeholder="blur" src={ProductDesignImage} />
+        <Image placeholder="blur" alt="Product design" src={ProductDesignImage} />
         <Overlay />
         <ServiceTitle>Product design</ServiceTitle>
       </div>
       <div className="relative h-1/3 flex items-center overflow-hidden">
-        <Image placeholder="blur" src={WebDevelopmentImage} />
+        <Image placeholder="blur" alt="Web development" src={WebDevelopmentImage} />
         <Overlay />
         <ServiceTitle>Web development</ServiceTitle>
       </div>
       <div className="relative h-1/3 flex items-center overflow-hidden">
-        <Image placeholder="blur" src={AppDevelopmentImage} />
+        <Image placeholder="blur" alt="App development" src={AppDevelopmentImage} />
         <Overlay />
         <ServiceTitle>App development</ServiceTitle>
       </div>
