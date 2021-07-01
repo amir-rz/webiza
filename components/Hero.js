@@ -9,8 +9,8 @@ const Hero = () => {
         className="
         laptop1:text-6xl
         tablet1:text-5xl
-        mobile3:text-3xl
-        text-2xl
+        mobile3:text-4xl
+        text-3xl
         text-center
         "
         h1
