@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav
-        className="flex fixed w-screen box-border px-5 py-3 top-0 left-0 items-center overflow-hidden z-50
+        className="shadow-sm flex fixed w-screen box-border px-5 py-3 top-0 left-0 items-center overflow-hidden z-50
         bg-secondary dark:bg-primary">
         <Text h3 className="m-0 pr-3 mr-auto">
           Webiza
