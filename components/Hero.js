@@ -13,8 +13,7 @@ const Hero = () => {
         text-3xl
         text-center
         "
-        h1
-        style={quoteStyle}>
+        h1>
         We design and develop <br /> production-level <br /> solutions
       </Text>
       <Button auto type="secondary" className="mt-10">
@@ -25,10 +24,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const quoteStyle = {
-  // width: "60%",
-  // textAlign: "center",
-  // margin: 0,
-  // padding: 0,
-};

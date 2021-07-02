@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Webiza - Web World Solution</title>
+        <title>Webiza | Web Development Agency</title>
+        <desc>We design and develop production-level solutions for you or your business </desc>
       </Head>
       <div className="max-w-1920 w-full mx-auto flex flex-col items-center justify-center">
         <Navbar />
