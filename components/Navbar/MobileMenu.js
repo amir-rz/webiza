@@ -13,13 +13,13 @@ const MobileMenu = ({ handleClose }) => {
         <ChevronRight />
       </div>
       <div className="flex flex-col items-center">
-        <Link className="p-2 m-2 cursor-pointer" href="#" onClick={handleClose}>
+        <Link className="p-2 m-2 cursor-pointer" href="/" onClick={handleClose}>
           Home
         </Link>
         <Link className="p-2 m-2 cursor-pointer"  href="#services-section" onClick={handleClose}>
           Services
         </Link>
-        <Link className="p-2 m-2 cursor-pointer" href="#" onClick={handleClose}>
+        <Link className="p-2 m-2 cursor-pointer" href="#contact-section" onClick={handleClose}>
           Contact
         </Link>
       </div>

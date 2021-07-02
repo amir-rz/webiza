@@ -35,3 +35,7 @@ hr {
 .max-w-1920 {
   max-width: 1920px;
 }
+
+button{
+  border-radius: 0 !important;
+}

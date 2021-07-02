@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <ul className="mobile3:flex hidden m-0 ">
           <NavItem>
-            <Link href="#">
+            <Link href="/">
               <Text p>Home</Text>
             </Link>
           </NavItem>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#">
+            <Link href="#contact-section">
               <Text p>Contact</Text>
             </Link>
           </NavItem>
