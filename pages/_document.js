@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { CssBaseline } from "@geist-ui/react";
+import { AppContext } from "./_app";
+import React from "react";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -19,7 +22,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en" className="light">
         <Head>
           {/* Favicons */}
           <link
