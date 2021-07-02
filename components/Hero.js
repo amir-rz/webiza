@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Button, Spacer, Link } from "@geist-ui/react";
+import { Text, Button, Link } from "@geist-ui/react";
 import styled from "styled-components";
 
 const Hero = () => {
@@ -15,15 +15,11 @@ const Hero = () => {
         "
         h1
         style={quoteStyle}>
-        We design and develop <br /> production-level <br /> web
-        solutions
+        We design and develop <br /> production-level <br /> solutions
       </Text>
-      <Spacer y={2} />
-      <div className="flex flex-col mobile3:flex-row">
-        <Button auto type="secondary">
-          Tell us about your project
-        </Button>
-      </div>
+      <Button auto type="secondary" className="mt-10">
+        <Link href="#contact-section">Tell us about your project</Link>
+      </Button>
     </div>
   );
 };
