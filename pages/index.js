@@ -1,10 +1,13 @@
+import { Fragment } from "react-is";
 import { Page } from "@geist-ui/react";
 import Hero from "@/components/Hero";
+import Head from "next/head";
+
 import Navbar from "@/components/Navbar/Navbar";
 import Services from "@/components/Services";
-import Head from "next/head";
-import { Fragment } from "react-is";
 import Contact from "@/components/Contact";
+import Webiza from "@/components/Webiza";
+
 
 export default function Home() {
   return (
@@ -18,6 +21,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Contact />
+        <Webiza/>
       </div>
     </Fragment>
   );
